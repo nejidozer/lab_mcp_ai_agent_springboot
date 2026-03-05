@@ -1,0 +1,7 @@
+﻿=== ISSUES ===
+4|open|ISSUE|[STEP 1.5] Add User vertical slice (domain/service/web + IT)
+3|open|ISSUE|[STEP 1.5] Setup CI to build and test the project
+2|open|ISSUE|Initialize Spring Boot project with Gradle
+1|open|ISSUE|AI Agent – LangChain4j + MCP + Claude
+
+=== PULL REQUESTS ===
