@@ -3,4 +3,8 @@ github:
   repo: mock
 anthropic:
   api-key: mock
+  model: mock-model
+mcp:
+  base-url: http://localhost:8080
+  path: /mcp
 
