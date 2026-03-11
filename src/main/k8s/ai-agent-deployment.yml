@@ -19,23 +19,15 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: "ci"
-            - name: ANTHROPIC_API_KEY
-              value: "dummy"
-            - name: MCP_BASE_URL
-              value: "http://localhost"
-            - name: MCP_PATH
-              value: "/mcp"
-
           ports:
             - containerPort: 8080
 
           readinessProbe:
             httpGet:
-              path: /actuator/health
+              path: /
               port: 8080
             initialDelaySeconds: 10
             periodSeconds: 5
-            failureThreshold: 12
 
 ---
 apiVersion: v1
