@@ -19,14 +19,24 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: "ci"
+            - name: ANTHROPIC_API_KEY
+              value: "dummy"
+            - name: MCP_BASE_URL
+              value: "http://localhost"
+            - name: MCP_PATH
+              value: "/mcp"
+
           ports:
             - containerPort: 8080
+
           readinessProbe:
             httpGet:
               path: /actuator/health
               port: 8080
-            initialDelaySeconds: 5
+            initialDelaySeconds: 10
             periodSeconds: 5
+            failureThreshold: 12
+
 ---
 apiVersion: v1
 kind: Service
@@ -37,7 +47,8 @@ spec:
     app: ai-agent
   type: NodePort
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 8080
       targetPort: 8080
       nodePort: 30080
