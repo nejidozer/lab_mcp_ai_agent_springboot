@@ -1,0 +1,136 @@
+﻿
+> Task :dependencies
+
+------------------------------------------------------------
+Root project 'agent'
+------------------------------------------------------------
+
+compileClasspath - Compile classpath for source set 'main'.
++--- org.springframework.boot:spring-boot-starter-web -> 3.3.5
+|    +--- org.springframework.boot:spring-boot-starter:3.3.5
+|    |    +--- org.springframework.boot:spring-boot:3.3.5
+|    |    |    +--- org.springframework:spring-core:6.1.14
+|    |    |    |    \--- org.springframework:spring-jcl:6.1.14
+|    |    |    \--- org.springframework:spring-context:6.1.14
+|    |    |         +--- org.springframework:spring-aop:6.1.14
+|    |    |         |    +--- org.springframework:spring-beans:6.1.14
+|    |    |         |    |    \--- org.springframework:spring-core:6.1.14 (*)
+|    |    |         |    \--- org.springframework:spring-core:6.1.14 (*)
+|    |    |         +--- org.springframework:spring-beans:6.1.14 (*)
+|    |    |         +--- org.springframework:spring-core:6.1.14 (*)
+|    |    |         +--- org.springframework:spring-expression:6.1.14
+|    |    |         |    \--- org.springframework:spring-core:6.1.14 (*)
+|    |    |         \--- io.micrometer:micrometer-observation:1.12.11 -> 1.13.6
+|    |    |              \--- io.micrometer:micrometer-commons:1.13.6
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.3.5
+|    |    |    \--- org.springframework.boot:spring-boot:3.3.5 (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:3.3.5
+|    |    |    +--- ch.qos.logback:logback-classic:1.5.11
+|    |    |    |    +--- ch.qos.logback:logback-core:1.5.11
+|    |    |    |    \--- org.slf4j:slf4j-api:2.0.15 -> 2.0.16
+|    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.23.1
+|    |    |    |    +--- org.apache.logging.log4j:log4j-api:2.23.1
+|    |    |    |    \--- org.slf4j:slf4j-api:2.0.9 -> 2.0.16
+|    |    |    \--- org.slf4j:jul-to-slf4j:2.0.16
+|    |    |         \--- org.slf4j:slf4j-api:2.0.16
+|    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.1
+|    |    +--- org.springframework:spring-core:6.1.14 (*)
+|    |    \--- org.yaml:snakeyaml:2.2
+|    +--- org.springframework.boot:spring-boot-starter-json:3.3.5
+|    |    +--- org.springframework.boot:spring-boot-starter:3.3.5 (*)
+|    |    +--- org.springframework:spring-web:6.1.14
+|    |    |    +--- org.springframework:spring-beans:6.1.14 (*)
+|    |    |    +--- org.springframework:spring-core:6.1.14 (*)
+|    |    |    \--- io.micrometer:micrometer-observation:1.12.11 -> 1.13.6 (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.17.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.17.2
+|    |    |    |    \--- com.fasterxml.jackson:jackson-bom:2.17.2
+|    |    |    |         +--- com.fasterxml.jackson.core:jackson-annotations:2.17.2 (c)
+|    |    |    |         +--- com.fasterxml.jackson.core:jackson-core:2.17.2 (c)
+|    |    |    |         +--- com.fasterxml.jackson.core:jackson-databind:2.17.2 (c)
+|    |    |    |         +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.17.2 (c)
+|    |    |    |         +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.17.2 (c)
+|    |    |    |         \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.17.2 (c)
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.17.2
+|    |    |    |    \--- com.fasterxml.jackson:jackson-bom:2.17.2 (*)
+|    |    |    \--- com.fasterxml.jackson:jackson-bom:2.17.2 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.17.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.17.2 (*)
+|    |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.17.2 (*)
+|    |    |    \--- com.fasterxml.jackson:jackson-bom:2.17.2 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.17.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.17.2 (*)
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.17.2 (*)
+|    |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.17.2 (*)
+|    |    |    \--- com.fasterxml.jackson:jackson-bom:2.17.2 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.17.2
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.17.2 (*)
+|    |         +--- com.fasterxml.jackson.core:jackson-databind:2.17.2 (*)
+|    |         \--- com.fasterxml.jackson:jackson-bom:2.17.2 (*)
+|    +--- org.springframework.boot:spring-boot-starter-tomcat:3.3.5
+|    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.1
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-core:10.1.31
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-el:10.1.31
+|    |    \--- org.apache.tomcat.embed:tomcat-embed-websocket:10.1.31
+|    |         \--- org.apache.tomcat.embed:tomcat-embed-core:10.1.31
+|    +--- org.springframework:spring-web:6.1.14 (*)
+|    \--- org.springframework:spring-webmvc:6.1.14
+|         +--- org.springframework:spring-aop:6.1.14 (*)
+|         +--- org.springframework:spring-beans:6.1.14 (*)
+|         +--- org.springframework:spring-context:6.1.14 (*)
+|         +--- org.springframework:spring-core:6.1.14 (*)
+|         +--- org.springframework:spring-expression:6.1.14 (*)
+|         \--- org.springframework:spring-web:6.1.14 (*)
++--- org.springframework.boot:spring-boot-starter-validation -> 3.3.5
+|    +--- org.springframework.boot:spring-boot-starter:3.3.5 (*)
+|    +--- org.apache.tomcat.embed:tomcat-embed-el:10.1.31
+|    \--- org.hibernate.validator:hibernate-validator:8.0.1.Final
+|         +--- jakarta.validation:jakarta.validation-api:3.0.2
+|         +--- org.jboss.logging:jboss-logging:3.4.3.Final -> 3.5.3.Final
+|         \--- com.fasterxml:classmate:1.5.1 -> 1.7.0
++--- org.springframework:spring-webflux -> 6.1.14
+|    +--- org.springframework:spring-beans:6.1.14 (*)
+|    +--- org.springframework:spring-core:6.1.14 (*)
+|    +--- org.springframework:spring-web:6.1.14 (*)
+|    \--- io.projectreactor:reactor-core:3.6.11
+|         \--- org.reactivestreams:reactive-streams:1.0.4
++--- dev.langchain4j:langchain4j-bom:1.12.2
+|    +--- dev.langchain4j:langchain4j-core:1.12.2 (c)
+|    +--- dev.langchain4j:langchain4j:1.12.2 (c)
+|    +--- dev.langchain4j:langchain4j-http-client-jdk:1.12.2 (c)
+|    +--- dev.langchain4j:langchain4j-anthropic:1.12.2 (c)
+|    \--- dev.langchain4j:langchain4j-http-client:1.12.2 (c)
++--- dev.langchain4j:langchain4j -> 1.12.2
+|    +--- dev.langchain4j:langchain4j-core:1.12.2
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.21 -> 2.17.2 (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-core:2.21.1 -> 2.17.2 (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.21.1 -> 2.17.2 (*)
+|    |    +--- org.slf4j:slf4j-api:2.0.17 -> 2.0.16
+|    |    \--- org.jspecify:jspecify:1.0.0 -> 0.3.0
+|    +--- com.fasterxml.jackson.core:jackson-annotations:2.21 -> 2.17.2 (*)
+|    +--- com.fasterxml.jackson.core:jackson-core:2.21.1 -> 2.17.2 (*)
+|    +--- com.fasterxml.jackson.core:jackson-databind:2.21.1 -> 2.17.2 (*)
+|    +--- org.apache.opennlp:opennlp-tools:2.5.4
+|    |    \--- org.slf4j:slf4j-api:2.0.17 -> 2.0.16
+|    \--- org.slf4j:slf4j-api:2.0.17 -> 2.0.16
++--- dev.langchain4j:langchain4j-core -> 1.12.2 (*)
++--- dev.langchain4j:langchain4j-anthropic -> 1.12.2
+|    +--- dev.langchain4j:langchain4j-core:1.12.2 (*)
+|    +--- dev.langchain4j:langchain4j-http-client:1.12.2
+|    |    +--- dev.langchain4j:langchain4j-core:1.12.2 (*)
+|    |    \--- org.slf4j:slf4j-api:2.0.17 -> 2.0.16
+|    +--- com.fasterxml.jackson.core:jackson-annotations:2.21 -> 2.17.2 (*)
+|    +--- com.fasterxml.jackson.core:jackson-core:2.21.1 -> 2.17.2 (*)
+|    \--- com.fasterxml.jackson.core:jackson-databind:2.21.1 -> 2.17.2 (*)
+\--- dev.langchain4j:langchain4j-http-client-jdk -> 1.12.2
+     +--- dev.langchain4j:langchain4j-core:1.12.2 (*)
+     \--- dev.langchain4j:langchain4j-http-client:1.12.2 (*)
+
+(c) - A dependency constraint, not a dependency. The dependency affected by the constraint occurs elsewhere in the tree.
+(*) - Indicates repeated occurrences of a transitive dependency subtree. Gradle expands transitive dependency subtrees only once per project; repeat occurrences only display the root of the subtree, followed by this annotation.
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+BUILD SUCCESSFUL in 1s
+1 actionable task: 1 executed
+

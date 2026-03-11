@@ -21,25 +21,26 @@ dependencies {
     // Spring
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
-    implementation "org.springframework:spring-webflux"
+    implementation 'org.springframework:spring-webflux'
 
-    // LangChain4j BOM (pins everything to 1.10.0)
-    implementation platform("dev.langchain4j:langchain4j-bom:1.10.0")
-
-    // LangChain4j core + Anthropic
-    implementation "dev.langchain4j:langchain4j"
-    implementation "dev.langchain4j:langchain4j-anthropic"
-
-    // Optional: JDK HTTP client integration
-    implementation "dev.langchain4j:langchain4j-http-client-jdk"
+    // LangChain4j
+    implementation 'dev.langchain4j:langchain4j:1.10.0'
+    implementation 'dev.langchain4j:langchain4j-anthropic:1.10.0'
+    implementation 'dev.langchain4j:langchain4j-http-client-jdk:1.10.0'
 
     // Testing
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation "org.mockito:mockito-core:5.12.0"
-    testImplementation "io.projectreactor:reactor-test"
+    testImplementation 'org.mockito:mockito-core:5.12.0'
+    testImplementation 'io.projectreactor:reactor-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+task printCompileClasspath {
+    doLast {
+        configurations.compileClasspath.each { println it }
+    }
 }

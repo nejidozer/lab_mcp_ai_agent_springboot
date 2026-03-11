@@ -1,0 +1,39 @@
+﻿./gradlew : 
+Au caractère Ligne:1 : 1
++ ./gradlew clean 
+compileJava > 
+build_output2.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (:String  
+  ) [], RemoteException
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+FAILURE: Build failed with 
+an exception.
+
+* What went wrong:
+BUG! exception in phase 
+'semantic analysis' in 
+source unit '_BuildScript_' 
+Unsupported class file major 
+version 67
+> Unsupported class file 
+major version 67
+
+* Try:
+> Run with --stacktrace 
+option to get the stack 
+trace.
+> Run with --info or --debug 
+option to get more log 
+output.
+> Run with --scan to get 
+full insights.
+> Get more help at 
+https://help.gradle.org.
+
+BUILD FAILED in 892ms
+

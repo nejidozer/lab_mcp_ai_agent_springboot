@@ -1,0 +1,12 @@
+Compiled from "ChatModel.java"
+public interface dev.langchain4j.model.chat.ChatModel {
+  public default dev.langchain4j.model.chat.response.ChatResponse chat(dev.langchain4j.model.chat.request.ChatRequest);
+  public default dev.langchain4j.model.chat.response.ChatResponse doChat(dev.langchain4j.model.chat.request.ChatRequest);
+  public default dev.langchain4j.model.chat.request.ChatRequestParameters defaultRequestParameters();
+  public default java.util.List<dev.langchain4j.model.chat.listener.ChatModelListener> listeners();
+  public default dev.langchain4j.model.ModelProvider provider();
+  public default java.lang.String chat(java.lang.String);
+  public default dev.langchain4j.model.chat.response.ChatResponse chat(dev.langchain4j.data.message.ChatMessage...);
+  public default dev.langchain4j.model.chat.response.ChatResponse chat(java.util.List<dev.langchain4j.data.message.ChatMessage>);
+  public default java.util.Set<dev.langchain4j.model.chat.Capability> supportedCapabilities();
+}

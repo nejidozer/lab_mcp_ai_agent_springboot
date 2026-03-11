@@ -1,0 +1,11 @@
+Compiled from "AnthropicChatModel.java"
+public class dev.langchain4j.model.anthropic.AnthropicChatModel implements dev.langchain4j.model.chat.ChatModel {
+  public dev.langchain4j.model.anthropic.AnthropicChatModel(dev.langchain4j.model.anthropic.AnthropicChatModel$AnthropicChatModelBuilder);
+  public static dev.langchain4j.model.anthropic.AnthropicChatModel$AnthropicChatModelBuilder builder();
+  public dev.langchain4j.model.chat.response.ChatResponse doChat(dev.langchain4j.model.chat.request.ChatRequest);
+  static dev.langchain4j.model.anthropic.internal.api.AnthropicThinking toThinking(java.lang.String, java.lang.Integer);
+  public java.util.List<dev.langchain4j.model.chat.listener.ChatModelListener> listeners();
+  public dev.langchain4j.model.ModelProvider provider();
+  public dev.langchain4j.model.chat.request.ChatRequestParameters defaultRequestParameters();
+  public java.util.Set<dev.langchain4j.model.chat.Capability> supportedCapabilities();
+}

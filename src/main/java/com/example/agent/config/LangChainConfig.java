@@ -6,6 +6,7 @@ import com.example.agent.agent.BacklogAgent;
 import com.example.agent.tools.AgentTool;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 import java.time.Duration;

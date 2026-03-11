@@ -1,0 +1,87 @@
+﻿> Task :clean
+
+> Task :compileJava FAILED
+./gradlew : C:\Users\faouziel
+ia\projetsgit\lab_mcp_ai_agen
+t_springboot\src\main\java\co
+m\example\agent\config\CiChat
+ModelConfig.java:3: error: 
+cannot find symbol
+Au caractère Ligne:1 : 1
++ ./gradlew clean 
+compileJava > 
+build_output4.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (C:\User  
+  s\faouzi...not find symb   
+ ol:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+import dev.langchain4j.model.
+chat.ChatLanguageModel;
+                             
+    ^
+  symbol:   class 
+ChatLanguageModel
+  location: package 
+dev.langchain4j.model.chat
+C:\Users\faouzielia\projetsgi
+t\lab_mcp_ai_agent_springboot
+\src\main\java\com\example\ag
+ent\config\CiChatModelConfig.
+java:15: error: cannot find 
+symbol
+    public ChatLanguageModel 
+chatLanguageModel() {
+           ^
+  symbol:   class 
+ChatLanguageModel
+  location: class 
+CiChatModelConfig
+C:\Users\faouzielia\projetsgi
+t\lab_mcp_ai_agent_springboot
+\src\main\java\com\example\ag
+ent\config\CiChatModelConfig.
+java:16: error: cannot find 
+symbol
+        return new 
+ChatLanguageModel() {
+                   ^
+  symbol:   class 
+ChatLanguageModel
+  location: class 
+CiChatModelConfig
+C:\Users\faouzielia\projetsgi
+t\lab_mcp_ai_agent_springboot
+\src\main\java\com\example\ag
+ent\config\CiChatModelConfig.
+java:17: error: method does 
+not override or implement a 
+method from a supertype
+            @Override
+            ^
+4 errors
+
+FAILURE: Build failed with 
+an exception.
+
+* What went wrong:
+Execution failed for task 
+':compileJava'.
+> Compilation failed; see 
+the compiler error output 
+for details.
+
+* Try:
+> Run with --info option to 
+get more log output.
+> Run with --scan to get 
+full insights.
+
+BUILD FAILED in 1s
+2 actionable tasks: 2 executed
+

@@ -1,8 +1,8 @@
 package com.example.agent.config;
 
-import dev.langchain4j.model.chat.ChatLanguageModel;
-import dev.langchain4j.model.chat.response.ChatResponse;
+import dev.langchain4j.model.chat.ChatModel;
 import dev.langchain4j.model.chat.request.ChatRequest;
+import dev.langchain4j.model.chat.response.ChatResponse;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
@@ -12,12 +12,11 @@ import org.springframework.context.annotation.Profile;
 public class CiChatModelConfig {
 
     @Bean
-    public ChatLanguageModel chatLanguageModel() {
-        return new ChatLanguageModel() {
+    public ChatModel chatModel() {
+        return new ChatModel() {
             @Override
             public ChatResponse chat(ChatRequest chatRequest) {
-                return ChatResponse.builder()
-                        .build();
+                return ChatResponse.builder().build();
             }
         };
     }

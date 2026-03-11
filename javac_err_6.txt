@@ -1,0 +1,22 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava FAILED
+C:\Users\faouzielia\OneDrive - Efrei\Documents\lab_mcp_ai_agent_springboot\src\main\java\com\example\agent\tools\GitHubMcpTools.java:11: error: cannot find symbol
+public class GitHubMcpTools implements AgentTool {
+                                       ^
+  symbol: class AgentTool
+1 error
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 18s
+1 actionable task: 1 executed
