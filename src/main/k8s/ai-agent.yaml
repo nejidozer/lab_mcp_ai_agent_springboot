@@ -37,7 +37,8 @@ spec:
   selector:
     app: ai-agent
   ports:
-    - name: http
-      port: 8080
-      targetPort: 8080
-  type: NodePort
+  - name: http
+    port: 8080
+    targetPort: 8080
+    nodePort: 30080
+type: NodePort
