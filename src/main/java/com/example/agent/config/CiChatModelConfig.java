@@ -1,5 +1,6 @@
 package com.example.agent.config;
 
+import dev.langchain4j.data.message.AiMessage;
 import dev.langchain4j.model.chat.ChatModel;
 import dev.langchain4j.model.chat.request.ChatRequest;
 import dev.langchain4j.model.chat.response.ChatResponse;
@@ -16,7 +17,9 @@ public class CiChatModelConfig {
         return new ChatModel() {
             @Override
             public ChatResponse chat(ChatRequest chatRequest) {
-                return ChatResponse.builder().build();
+                return ChatResponse.builder()
+                        .aiMessage(AiMessage.from("CI mock response"))
+                        .build();
             }
         };
     }

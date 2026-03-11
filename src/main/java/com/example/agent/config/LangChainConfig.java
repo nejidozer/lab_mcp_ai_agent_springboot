@@ -1,5 +1,6 @@
 package com.example.agent.config;
 
+import dev.langchain4j.model.chat.ChatModel;
 import dev.langchain4j.model.anthropic.AnthropicChatModel;
 import dev.langchain4j.service.AiServices;
 import com.example.agent.agent.BacklogAgent;
@@ -13,10 +14,10 @@ import java.time.Duration;
 import java.util.List;
 
 @Configuration
-@Profile("!ci")
 public class LangChainConfig {
 
     @Bean
+    @Profile("!ci")
     public AnthropicChatModel anthropicChatModel(
             @Value("${anthropic.api-key}") String apiKey,
             @Value("${anthropic.model}") String model,
@@ -31,7 +32,7 @@ public class LangChainConfig {
     }
 
     @Bean
-    public BacklogAgent backlogAgent(AnthropicChatModel model, List<AgentTool> tools) {
+    public BacklogAgent backlogAgent(ChatModel model, List<AgentTool> tools) {
         return AiServices.builder(BacklogAgent.class)
                 .chatModel(model)
                 .tools(tools.toArray())
