@@ -1571,7 +1571,7 @@ kubectl -n lab-agent create secret generic agent-secrets \
 
 ## 12.4 Deploy GitHub MCP Server (Deployment + Service)
 
-Create `k8s/github-mcp.yaml`:
+Create `src/main/k8s/github-mcp.yaml`:
 
 ```yaml
 apiVersion: apps/v1
@@ -1619,7 +1619,7 @@ spec:
 Apply:
 
 ```bash
-kubectl apply -f k8s/github-mcp.yaml
+kubectl apply -f src/main/k8s/github-mcp.yaml
 ```
 
 ---
@@ -1636,7 +1636,7 @@ mcp:
   path: ${MCP_PATH:/mcp}
 ```
 
-Create `k8s/ai-agent.yaml`:
+Create `src/main/k8s/ai-agent.yaml`:
 
 ```yaml
 apiVersion: apps/v1
@@ -1688,7 +1688,7 @@ spec:
 Apply:
 
 ```bash
-kubectl apply -f k8s/ai-agent.yaml
+kubectl apply -f src/main/k8s/ai-agent.yaml
 ```
 
 ---
